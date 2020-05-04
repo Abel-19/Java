@@ -1,5 +1,3 @@
-package fr.abel.calculatrice;
-
 import java.util.Scanner;
 public class Calculatrice {
     static Scanner clavier = new Scanner(System.in);

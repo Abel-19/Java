@@ -1,5 +1,4 @@
-package fr.abel.rectangle;
-class Main {
+class Ractangle {
    public static void main (String[] args)
    {
      System.out.print("Entrez la longueur du rectangle: ");
