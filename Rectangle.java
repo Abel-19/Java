@@ -1,17 +1,36 @@
-class Ractangle {
-   public static void main (String[] args)
-   {
-     System.out.print("Entrez la longueur du rectangle: ");
-     double longueur = nextDouble();
-     
-     System.out.print("Entrez la largeur du rectangle: ");
-     double largeur = nextDouble();
-     double surface = longueur * largeur;
-     
-     System.out.println("La surface du rectangle est : "+surface);
+import java.lang.Math;
+public class Rectangle extends Figure{
+
+   public Rectangle (){
    }
 
-private static double nextDouble() {
-	return 0;
-}
+    public Rectangle (double longueur){
+       this.longueur=longueur;
+   }
+    public Rectangle (double longueur){
+       this.largeur=largeur;
+   }
+
+ 
+   public double demiPerimetre() {
+      return this.longueur+this.largeur;
+   }   
+
+ 
+   public double demiPerimetre() {
+      return (this.longueur+this.largeur)*2;
+   }   
+
+  
+   public double surface() {
+     return this.longueur*this.largeur;
+} 
+
+
+  
+   public double diagonale(){
+     return Math.sqrt(Math.pow(this.longueur,2)+Math.pow(this.largeur,2));
+     
+   }   
+
 }
